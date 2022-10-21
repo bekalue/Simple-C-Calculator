@@ -6,4 +6,4 @@
 
 ## Files
 
-`Calculator.c` - calculation with alexa.
+[Calculator.c](https://github.com/bekalue/Simple-C-Calculator/blob/main/Calculator.c) - calculation with alexa.
