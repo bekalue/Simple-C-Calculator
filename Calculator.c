@@ -13,28 +13,26 @@ int main(void)
 	int option;
 
 	printf("Hi, I am alexa\n");
-	printf("Please select the options:\n");
 	printf("1) Addition\t2)Subtraction\n3)Multiplication\t4)Division\n");
+	printf("Please select the option:");
 	scanf("%d",&option);
 
-again:
 	switch (option)
 	{
-		case '1':
+		case 1:
 			addition();
 			break;
-		case '2':
+		case 2:
 			subtraction();
 			break;
-		case '3':
+		case 3:
 			multiplication();
 			break;
-		case '4':
+		case 4:
 			Division();
 			break;
 		default:
 			printf("Please Select the given options only\n");
-			goto again;
 	}
 	return (0);
 }
@@ -49,3 +47,30 @@ void addition()
 	printf("%f\n", x + y);
 }
 
+void subtraction()
+{
+	double x, y;
+
+	printf("Please enter the two numbers to be subed\n");
+	scanf("%lf\t%lf", &x, &y);
+
+	printf("%f\n", x - y);
+}
+void multiplication()
+{
+	double x, y;
+
+	printf("Please enter the two numbers to be multiplied\n");
+	scanf("%lf\t%lf", &x, &y);
+
+	printf("%f\n", x * y);
+}
+void Division()
+{
+	double x, y;
+
+	printf("Please enter the two numbers to be divided\n");
+	scanf("%lf\t%lf", &x, &y);
+
+	printf("%f\n", x / y);
+}
